@@ -9,7 +9,11 @@ import { DatalinksComponent } from './datalinks/datalinks.component';
 import { HttpClientModule} from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 
-
+const appRoutes:Routes=[
+  {
+    path:"",component:DatalinksComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -20,6 +24,7 @@ import { NavbarComponent } from './navbar/navbar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule.forRoot(appRoutes),
     HttpClientModule
 
   ],
