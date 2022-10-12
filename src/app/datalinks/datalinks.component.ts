@@ -10,7 +10,7 @@ export class DatalinksComponent implements OnInit {
 
   constructor(private myapi:ApiService) { 
 
-    this.fetchData
+    this.fetchData()
   }
 
   fetchData=() =>{
